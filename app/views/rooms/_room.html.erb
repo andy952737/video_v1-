@@ -1,0 +1,14 @@
+<div id="<%= dom_id room %>">
+  <p>
+    <strong>Name:</strong>
+    <%= room.name %>
+    <!-- 此房間線上人數: ? -->
+  </p>
+  <%= content_tag(:div, "", data: {
+    controller: "room",
+    room_id: room.id,
+  }) %>
+  <hr>
+  <div class="add_users"></div>
+
+</div>
